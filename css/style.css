@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#404258;
+    font-family: 'Rambla', sans-serif;  
+}
+
+div.menu {
+    box-shadow: 0px 1px 10px 0.2px;
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu a img{
+    min-width: 150px;
+    max-width: 250px;
+    margin: 20px;
+}
+
+.menu ul{
+    margin:auto;
+}
+
+.menu ul li {
+    display: block;
+    width: 150px;
+    padding: 0px 10px;
+    padding: 0;
+    position: relative;
+}
+
+.menu ul li a {
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu a {
+    padding: 12.5px;
+    display: block;
+    text-decoration: none;
+    color: #F1F3F8;
+}
+
+.content{
+    margin-top: 2vw;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+
+#banner {
+    width: 100%;
+    height: 25vw;
+    max-height: 500px;
+    position: relative;
+}
+
+#banner img {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+    transition: opacity 800ms ease-in-out;
+    border-radius: 4px;
+}
+
+#banner img.selected{
+    opacity: 1;
+}
